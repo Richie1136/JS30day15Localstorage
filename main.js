@@ -13,6 +13,7 @@ function addItem(event) {
   }
   items.push(item)
   populateList(items, itemsList)
+  localStorage.setItem('items', JSON.stringify(items))
   this.reset()
 }
 
